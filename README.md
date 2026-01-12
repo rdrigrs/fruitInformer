@@ -14,6 +14,7 @@
 *   **Language:** [Kotlin](https://kotlinlang.org/)
 *   **UI Framework:** [Jetpack Compose](https://developer.android.com/jetpack/compose)
 *   **Architecture:** MVVM (Model-View-ViewModel)
+*   **Dependency Injection:** [Hilt](https://dagger.dev/hilt/)
 *   **Navigation:** [Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
 *   **Networking:** [Retrofit](https://square.github.io/retrofit/) & [Gson](https://github.com/google/gson)
 *   **Concurrency:** Kotlin Coroutines & Flow
@@ -39,6 +40,7 @@
 
 ## 📂 Project Structure
 
+*   `di`: Hilt modules for dependency injection.
 *   `ui/screens`: Composable functions representing the app's screens (Search, Detail, Favorites).
 *   `ui/viewmodel`: ViewModels managing UI state and business logic.
 *   `data/remote`: Network configuration and API interfaces.
