@@ -2,21 +2,22 @@ package com.example.fruitinformer.ui.viewmodel
 
 import android.app.Application
 import android.content.Context
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.example.fruitinformer.data.model.Fruit
 import com.example.fruitinformer.data.repository.FruitRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class FruitViewModel(
+@HiltViewModel
+class FruitViewModel @Inject constructor(
     application: Application,
     private val repository: FruitRepository
-) : AndroidViewModel(application) {
+) : ViewModel() {
 
     private val _searchResult = MutableStateFlow<Fruit?>(null)
     val searchResult: StateFlow<Fruit?> = _searchResult.asStateFlow()
@@ -90,18 +91,5 @@ class FruitViewModel(
             val savedFavorites: List<Fruit> = com.google.gson.Gson().fromJson(json, type)
             _favorites.value = savedFavorites
         }
-    }
-}
-
-class FruitViewModelFactory(
-    private val application: Application,
-    private val repository: FruitRepository
-) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(FruitViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return FruitViewModel(application, repository) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }
