@@ -64,7 +64,3 @@ Autor: Rodrigo Rodrigues Santos
 *   `data/remote`: Network configuration and API interfaces.
 *   `data/repository`: Repository pattern implementation for data handling.
 *   `data/model`: Data classes representing the API response.
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
