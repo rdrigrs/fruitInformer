@@ -1,5 +1,9 @@
 # Fruit Informer 🍎🍌🍇
 
+Universidade Federal do Ceará
+Disciplina de Programação para Dispositivos Móveis ministrada pelo professor Windson Viana
+Autor: Rodrigo Rodrigues Santos
+
 **Fruit Informer** is a modern Android application built with Jetpack Compose that allows users to search for nutritional information about various fruits and manage a list of their favorites.
 
 ## 📱 Features
@@ -12,8 +16,8 @@
 ## 🖼️ Screenshots
 ### Search Screen
 <img src="./screenshots/search_screen.png">
-### Fruit Detail Screen
 
+### Fruit Detail Screen
 <img src="./screenshots/fruit_detail_screen.png">
 
 ### Favorites Screen
@@ -21,7 +25,7 @@
 <img src="./screenshots/favorites_screen.png">
 
 ### App Video
-![Video Preview](./screenshots/video.webm)]
+![Video Preview](./screenshots/video.webm)
 
 ## 🛠️ Technologies Used
 
@@ -30,7 +34,7 @@
 *   **Architecture:** MVVM (Model-View-ViewModel)
 *   **Dependency Injection:** [Hilt](https://dagger.dev/hilt/)
 *   **Navigation:** [Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
-*   **Networking:** [Retrofit](https://square.github.io/retrofit/) & [Gson](https://github.com/google/gson)
+*   **RESTful API Consumption:** [Retrofit](https://square.github.io/retrofit/) for making REST requests and [Gson](https://github.com/google/gson) for JSON parsing.
 *   **Concurrency:** Kotlin Coroutines & Flow
 *   **Local Storage:** SharedPreferences (for saving favorites)
 *   **API:** [Fruityvice API](https://www.fruityvice.com/)
