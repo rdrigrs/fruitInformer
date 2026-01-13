@@ -1,67 +1,66 @@
 # Fruit Informer 🍎🍌🍇
 
 Universidade Federal do Ceará
-Disciplina: Programação para Dispositivos Móveis 
+Disciplina: Programação para Dispositivos Móveis
 Professor: Windson Viana
 Autor: Rodrigo Rodrigues Santos
 
-**Fruit Informer** is a modern Android application built with Jetpack Compose that allows users to search for nutritional information about various fruits and manage a list of their favorites.
+O **Fruit Informer** é um aplicativo Android moderno construído com Jetpack Compose que permite aos usuários pesquisar informações nutricionais sobre várias frutas e gerenciar uma lista de suas favoritas.
 
-## 📱 Features
+## 📱 Funcionalidades
 
-*   **Search Fruits:** Look up detailed information about any fruit.
-*   **Detailed Insights:** View taxonomic classifications (family, genus, order) and nutritional values (calories, carbohydrates, protein, fat, sugar).
-*   **Favorites:** Save your preferred fruits for quick access later.
-*   **Modern UI:** A clean and responsive user interface built with Material Design 3.
+*   **Pesquisar Frutas:** Busque informações detalhadas sobre qualquer fruta.
+*   **Informações Detalhadas:** Veja classificações taxonômicas (família, gênero, ordem) e valores nutricionais (calorias, carboidratos, proteínas, gordura, açúcar).
+*   **Favoritos:** Salve suas frutas preferidas para acesso rápido posteriormente.
+*   **UI Moderna:** Uma interface de usuário limpa e responsiva construída com Material Design 3.
 
-## 🖼️ Screenshots
-### Search Screen
+## 🖼️ Capturas de Tela
+### Tela de Pesquisa
 <img src="./screenshots/search_screen.png">
 
-### Fruit Detail Screen
+### Tela de Detalhes da Fruta
 <img src="./screenshots/fruit_detail_screen.png">
 
-### Favorites Screen
-
+### Tela de Favoritos
 <img src="./screenshots/favorites_screen.png">
 
-### App Video
-![Video Preview](./screenshots/video.webm)
+### Vídeo do App
+![Vídeo de Demonstração](./screenshots/video.webm)
 
-## 🛠️ Technologies Used
+## 🛠️ Tecnologias Utilizadas
 
-*   **Language:** [Kotlin](https://kotlinlang.org/)
-*   **UI Framework:** [Jetpack Compose](https://developer.android.com/jetpack/compose)
-*   **Architecture:** MVVM (Model-View-ViewModel)
-*   **Dependency Injection:** [Hilt](https://dagger.dev/hilt/)
-*   **Navigation:** [Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
-*   **RESTful API Consumption:** [Retrofit](https://square.github.io/retrofit/) for making REST requests and [Gson](https://github.com/google/gson) for JSON parsing.
-*   **Concurrency:** Kotlin Coroutines & Flow
-*   **Local Storage:** SharedPreferences (for saving favorites)
+*   **Linguagem:** [Kotlin](https://kotlinlang.org/)
+*   **Framework de UI:** [Jetpack Compose](https://developer.android.com/jetpack/compose)
+*   **Arquitetura:** MVVM (Model-View-ViewModel)
+*   **Injeção de Dependência:** [Hilt](https://dagger.dev/hilt/)
+*   **Navegação:** [Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
+*   **Consumo de API RESTful:** [Retrofit](https://square.github.io/retrofit/) para fazer requisições REST e [Gson](https://github.com/google/gson) para análise de JSON.
+*   **Concorrência:** Kotlin Coroutines & Flow
+*   **Armazenamento Local:** SharedPreferences (para salvar favoritos)
 *   **API:** [Fruityvice API](https://www.fruityvice.com/)
 
-## 🚀 Getting Started
+## 🚀 Como Começar
 
-### Prerequisites
-*   Android Studio Ladybug or newer.
-*   JDK 17 or newer.
+### Pré-requisitos
+*   Android Studio Ladybug ou mais recente.
+*   JDK 17 ou mais recente.
 
-### Installation
+### Instalação
 
-1.  **Clone the repository:**
+1.  **Clone o repositório:**
     ```bash
     git clone https://github.com/yourusername/fruitInformer.git
     ```
-2.  **Open in Android Studio:**
-    Open Android Studio and select "Open an existing Android Studio project", pointing to the cloned directory.
-3.  **Build and Run:**
-    Wait for Gradle to sync, then run the app on an emulator or physical device.
+2.  **Abra no Android Studio:**
+    Abra o Android Studio e selecione "Open an existing Android Studio project", apontando para o diretório clonado.
+3.  **Compile e Execute:**
+    Aguarde a sincronização do Gradle e, em seguida, execute o aplicativo em um emulador ou dispositivo físico.
 
-## 📂 Project Structure
+## 📂 Estrutura do Projeto
 
-*   `di`: Hilt modules for dependency injection.
-*   `ui/screens`: Composable functions representing the app's screens (Search, Detail, Favorites).
-*   `ui/viewmodel`: ViewModels managing UI state and business logic.
-*   `data/remote`: Network configuration and API interfaces.
-*   `data/repository`: Repository pattern implementation for data handling.
-*   `data/model`: Data classes representing the API response.
+*   `di`: Módulos Hilt para injeção de dependência.
+*   `ui/screens`: Funções Composable que representam as telas do aplicativo (Pesquisa, Detalhes, Favoritos).
+*   `ui/viewmodel`: ViewModels que gerenciam o estado da UI e a lógica de negócios.
+*   `data/remote`: Configuração de rede e interfaces de API.
+*   `data/repository`: Implementação do padrão Repository para manipulação de dados.
+*   `data/model`: Classes de dados que representam a resposta da API.
