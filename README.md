@@ -1,7 +1,8 @@
 # Fruit Informer 🍎🍌🍇
 
 Universidade Federal do Ceará
-Disciplina de Programação para Dispositivos Móveis ministrada pelo professor Windson Viana
+Disciplina: Programação para Dispositivos Móveis 
+Professor: Windson Viana
 Autor: Rodrigo Rodrigues Santos
 
 **Fruit Informer** is a modern Android application built with Jetpack Compose that allows users to search for nutritional information about various fruits and manage a list of their favorites.
