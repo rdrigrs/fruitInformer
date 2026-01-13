@@ -2,6 +2,7 @@ package com.example.fruitinformer.ui.viewmodel
 
 import android.app.Application
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.fruitinformer.data.model.Fruit
@@ -11,6 +12,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
@@ -45,10 +47,11 @@ class FruitViewModel @Inject constructor(
             _isLoading.value = true
             _errorMessage.value = null
             try {
-                val fruit = repository.getFruit(name)
+                val fruit = repository.getFruit(name.lowercase(Locale.getDefault()))
                 _searchResult.value = fruit
                 _navigateToDetail.value = true
             } catch (e: Exception) {
+                Log.e("FruitViewModel", "Error searching for fruit: ${e.message}", e)
                 _searchResult.value = null
                 _errorMessage.value = "Fruta não encontrada ou erro na conexão."
             } finally {

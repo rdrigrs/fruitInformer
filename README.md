@@ -9,6 +9,20 @@
 *   **Favorites:** Save your preferred fruits for quick access later.
 *   **Modern UI:** A clean and responsive user interface built with Material Design 3.
 
+## 🖼️ Screenshots
+### Search Screen
+<img src="./screenshots/search_screen.png">
+### Fruit Detail Screen
+
+<img src="./screenshots/fruit_detail_screen.png">
+
+### Favorites Screen
+
+<img src="./screenshots/favorites_screen.png">
+
+### App Video
+![Video Preview](./screenshots/video.webm)]
+
 ## 🛠️ Technologies Used
 
 *   **Language:** [Kotlin](https://kotlinlang.org/)

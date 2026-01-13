@@ -5,9 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface FruityviceApi {
-    @GET("api/fruit/all")
+    @GET("fruit/all")
     suspend fun getAllFruits(): List<Fruit>
 
-    @GET("api/fruit/{name}")
+    @GET("fruit/{name}")
     suspend fun getFruitByName(@Path("name") name: String): Fruit
 }
